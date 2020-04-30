@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     get "/bikes/:id" => "bikes#show"
     patch "/bikes/:id" => "bikes#update"
     delete "/bikes/:id" => "bikes#destroy"
+
+    post "/users" => "users#create"
   end
 end
