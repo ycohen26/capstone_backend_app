@@ -16,9 +16,9 @@
 #   state = Faker::Address.state
 #   zipcode = Faker::Address.zip_code
 #   email = "#{first_name[0]}.#{last_name}@email.com"
+#   password = "password"
 
-#   user = User.new(first_name: first_name, last_name: last_name, address_1: address1, address_2: address2, city: city, state: state, zipcode: zipcode, email: email)
-#   user.save
+#   user = User.create!(first_name: first_name, last_name: last_name, address_1: address1, address_2: address2, city: city, state: state, zipcode: zipcode, email: email, password: password)
 # end
 
 # Bike 1
