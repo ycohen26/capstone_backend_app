@@ -1,0 +1,3 @@
+@bikes.map do |bike|
+  render partial: "bike.json.jb", locals: { bike: bike }
+end

@@ -1,0 +1,21 @@
+{
+    seller_id: bike.seller_id,
+    buyer_id: bike.buyer_id,
+    brand: bike.brand,
+    model: bike.model,
+    size: bike.size,
+    speeds: bike.speeds,
+    plates: bike.plates,
+    group: bike.group,
+    frame_material: bike.frame_material,
+    fork_material: bike.fork_material,
+    year_of_purchase: bike.year_of_purchase,
+    wheels: bike.wheels,
+    aestetic_condition: bike.aestetic_condition,
+    mechanical_condition: bike.mechanical_condition,
+    has_pedals: bike.has_pedals,
+    original_receipt: bike.original_receipt,
+    im_a_shop: bike.im_a_shop,
+    negotiable_price: bike.negotiable_price,
+    price: bike.price 
+  }

@@ -1,5 +1,5 @@
 class Api::UsersController < ApplicationController
-  def create
+  # def create
     
-  end
+  # end
 end
