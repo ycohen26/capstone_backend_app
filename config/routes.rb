@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     patch "/bikes/:id" => "bikes#update"
     delete "/bikes/:id" => "bikes#destroy"
 
+    #Authentication
     post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
+    
   end
 end
