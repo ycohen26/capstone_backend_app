@@ -32,7 +32,7 @@ class Api::BikesController < ApplicationController
       im_a_shop: params[:im_a_shop],  
       negotiable_price: params[:negotiable_price],  
       price: params[:price],  
-      group: params[:group]
+      group: params[:group] #HOW TO ADD PHOTOS?
     )
     if @bike.save
       render 'show.json.jb'

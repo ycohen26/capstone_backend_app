@@ -18,5 +18,8 @@
     original_receipt: bike.original_receipt,
     im_a_shop: bike.im_a_shop,
     negotiable_price: bike.negotiable_price,
-    price: bike.price 
+    price: bike.price,
+    photos: bike.photos,
+    favorites: bike.favorites,
+    comments: bike.comments
   }
