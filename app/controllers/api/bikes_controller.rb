@@ -1,4 +1,6 @@
 class Api::BikesController < ApplicationController
+  before_action :authenticate_user
+  
   def index
     @bikes = Bike.all
     render 'index.json.jb'
@@ -13,8 +15,7 @@ class Api::BikesController < ApplicationController
   
   def create
     @bike = Bike.new(
-      seller_id: params[:seller_id], #will have to change to current user/user posting
-      buyer_id: params[:buyer_id],   #will update to the purchaser
+      seller_id: current_user.id,
       brand: params[:brand],  
       model: params[:model],  
       size: params[:size],  
@@ -33,8 +34,11 @@ class Api::BikesController < ApplicationController
       price: params[:price],  
       group: params[:group]
     )
-    @bike.save
-    render 'show.json.jb'
+    if @bike.save
+      render 'show.json.jb'
+    else
+      render json: { errors: @bike.errors.full_messages }
+    end
   end
   
   
@@ -42,7 +46,7 @@ class Api::BikesController < ApplicationController
     the_id = params[:id]
     @bike = Bike.find_by(id: the_id)
     @bike.update(
-      buyer_id: params[:buyer_id] || @bike.buyer_id,
+      buyer_id: params[:buyer_id] || @bike.buyer_id, #will update to the purchaser
       brand: params[:brand] || @bike.brand,  
       model: params[:model] || @bike.model,  
       size: params[:size] || @bike.size,  
@@ -61,6 +65,7 @@ class Api::BikesController < ApplicationController
       price: params[:price] || @bike.price,  
       group: params[:group || @bike.group]
     )
+    @bike.save
     render 'show.json.jb'
   end
   

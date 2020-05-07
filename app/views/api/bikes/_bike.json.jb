@@ -1,4 +1,5 @@
 {
+    id: bike.id,
     seller_id: bike.seller_id,
     buyer_id: bike.buyer_id,
     brand: bike.brand,

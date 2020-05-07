@@ -1,5 +1,5 @@
 class Bike < ApplicationRecord
-  belongs_to :user
+  # belongs_to :user
   has_many :photos
-  belongs_to :comments
+  # belongs_to :comments
 end
