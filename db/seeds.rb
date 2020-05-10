@@ -21,7 +21,7 @@
 #   user = User.create!(first_name: first_name, last_name: last_name, address_1: address1, address_2: address2, city: city, state: state, zipcode: zipcode, email: email, password: password)
 # end
 
-# Bike 1
+# # Bike 1
 # bike = Bike.new({seller_id: 5, brand: "Giant", model: "Trinity", size: "52 (s)", speeds: "11v", plates: "Compac (50/34)", frame_material: "Carbon", fork_material: "Carbon", year_of_purchase: "2017", wheels: "no profile", aestetic_condition: "With slight marks, rubs or nicks", mechanical_condition: "In perfect condition, ready to roll", has_pedals: true, original_receipt: true, im_a_shop: false, negotiable_price: true})
 
 # photo = Photo.new({image_url: "https://bkie.s3.amazonaws.com/pd/user/564baee367abc27434442bcc/products/W800-2IK8MRBE5A.jpeg", bike_id: 1})
@@ -57,7 +57,7 @@
 # photo = Photo.new({image_url: "https://bkie.s3.amazonaws.com/pd/user/55cc9ca767abc23883726ec1/products/W800-69U566052Z.jpeg", bike_id: 3})
 # photo.save
 
-# Bike 4
+# # Bike 4
 # bike = Bike.new({seller_id: 38, brand: "Orbea", model: "mx 29", size: "17 (M)", speeds: "10v", frame_material: "Aluminum", year_of_purchase: "2018", wheels: "29", aestetic_condition: "With slight marks, rubs or nicks", mechanical_condition: "In perfect condition, ready to roll", has_pedals: true, original_receipt: false, im_a_shop: false, negotiable_price: false, price: 500.00, group: "shimano deore"})
 # bike.save
 

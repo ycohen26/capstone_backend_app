@@ -35,6 +35,12 @@ class Api::BikesController < ApplicationController
       group: params[:group] #HOW TO ADD PHOTOS?
     )
     if @bike.save
+      params[:image_url].each do |image|
+        @bike.photos = Photo.new(
+          bike_id = @bike.id,
+          image_url = image
+        ) 
+      end
       render 'show.json.jb'
     else
       render json: { errors: @bike.errors.full_messages }
