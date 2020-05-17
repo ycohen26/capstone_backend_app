@@ -20,6 +20,7 @@
     negotiable_price: bike.negotiable_price,
     price: bike.price,
     photos: bike.photos,
+    category: bike.category,
     favorites: bike.favorites,
     comments: bike.comments
   }
