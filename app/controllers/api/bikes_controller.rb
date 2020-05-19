@@ -70,8 +70,8 @@ class Api::BikesController < ApplicationController
     @bike.negotiable_price = params[:negotiable_price] || @bike.negotiable_price,  
     @bike.price = params[:price] || @bike.price,  
     @bike.group = params[:group] || @bike.group,
-    @bike.group = params[:category] || @bike.category,
-    @bike.photos
+    @bike.category,
+    # @bike.photos
     @bike.save
     render 'show.json.jb'
   end
